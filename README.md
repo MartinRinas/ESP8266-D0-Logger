@@ -1,12 +1,12 @@
 # ESP8266-D0-Logger
 ESP8266 based data logger for power meters with infrared D0 interface
 
-This sketch reads values every 15s. Once data is recieved it can be read via http://<yourESP> and it will also be send via UDP broadcast. 
+This sketch reads values every 15s. Once data is recieved it can be read via http://ESP8266-D0 and it will also be send via UDP broadcast. 
 
 # Setup
 Besides a ESP8266 you'll also need a IR read/write adapter with TTL level connected to the RX/TX ports of your ESP8266. You can build this your own with a IR LED and IR phototransistor or get one read built.
 
-You'll need to disconnect the RX port while flashing via USB to avoid interferences, I had lots of failed attempts to flash. Once the sketch is up and running you can flash OTA by navigating to http://<yourESP>/update to avoid this problem.
+You'll need to disconnect the RX port while flashing via USB to avoid interferences, I had lots of failed attempts to flash. Once the sketch is up and running you can flash OTA by navigating to http://ESP8266-D0/update to avoid this problem.
 
 This sketch is built for meters requiring a initialization string, my meters didn't send the data withouth that. 
 
