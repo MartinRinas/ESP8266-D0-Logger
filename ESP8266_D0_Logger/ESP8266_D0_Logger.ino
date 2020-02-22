@@ -118,7 +118,6 @@ void HandleAbsPower()
     int AbsPower = int(AbsPowerkW*1000);                             // Value is in kW, we need W
 
     String res = String(AbsPower);
-    res.trim();                     //remove whitespace
     WebserverResponse(res);             // send webserver response
 }
 
